@@ -1,0 +1,22 @@
+{
+  "name": "axios-observable-request",
+  "main": "lib/index.js",
+  "repository": "git@github.com:DylanMerigaud/axios-observable-request.git",
+  "author": "DylanMerigaud <dylanmerigaud@gmail.com>",
+  "license": "MIT",
+  "scripts": {
+    "build": "babel src -d lib",
+    "start": "cross-env-shell \"$npm_execpath run build -- -w\"",
+    "postversion": "cross-env-shell \"git push --tags && yarn publish . --tag $npm_package_version && git push && echo \"Successfully released version $npm_package_version!\"\""
+  },
+  "peerDependencies": {
+    "axios": "^0.18.0",
+    "rxjs": "^6.4.0"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.4.3",
+    "@babel/core": "^7.4.3",
+    "@babel/preset-env": "^7.4.3",
+    "cross-env": "^5.2.0"
+  }
+}
