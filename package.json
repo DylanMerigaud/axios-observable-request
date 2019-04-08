@@ -1,23 +1,37 @@
 {
   "name": "axios-observable-request",
-  "main": "lib/index.js",
-  "repository": "git@github.com:DylanMerigaud/axios-observable-request.git",
-  "author": "DylanMerigaud <dylanmerigaud@gmail.com>",
+  "description": "Util to use Axios as RxJs Observer.",
+  "version": "1.0.0",
   "license": "MIT",
+  "main": "lib/index.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/DylanMerigaud/axios-observable-request.git"
+  },
+  "bugs": {
+    "url": "https://github.com/DylanMerigaud/axios-observable-request/issues"
+  },
+  "keywords": [
+    "Axios",
+    "RxJs",
+    "Observer",
+    "Util"
+  ],
+  "author": "DylanMerigaud <dylanmerigaud@gmail.com>",
+  "contributors": [],
   "scripts": {
     "build": "babel src -d lib",
     "start": "cross-env-shell \"$npm_execpath run build -- -w\"",
-    "postversion": "cross-env-shell \"git push --tags && yarn publish . --tag $npm_package_version && git push && echo \"Successfully released version $npm_package_version!\"\""
-  },
-  "peerDependencies": {
-    "axios": "^0.18.0",
-    "rxjs": "^6.4.0"
+    "example:default": "node ./examples/default.js",
+    "example:custom": "node ./examples/custom.js",
+    "postversion": "cross-env-shell \"$npm_execpath run build && git push --tags && yarn publish . --tag $npm_package_version && git push && echo \"Successfully released version $npm_package_version!\"\""
   },
   "devDependencies": {
+    "axios": "^0.18.0",
+    "rxjs": "^6.4.0",
     "@babel/cli": "^7.4.3",
     "@babel/core": "^7.4.3",
     "@babel/preset-env": "^7.4.3",
     "cross-env": "^5.2.0"
-  },
-  "version": "1.0.0"
+  }
 }

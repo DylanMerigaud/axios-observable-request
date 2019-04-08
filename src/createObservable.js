@@ -1,11 +1,13 @@
 import { Observable, defer } from "rxjs";
+import axios from "axios";
 
-const createObservable = axiosInstance => config =>
+const createObservable = (config = {}) =>
   Observable.create(observer => {
-    const source = axiosInstance.CancelToken.source();
+    const { _axiosInstance: axiosInstance = axios, ...restConfig } = config;
+    const source = axios.CancelToken.source();
     const cancelToken = source.token;
     const subscription = defer(() =>
-      axiosInstance.request({ ...config, cancelToken })
+      axiosInstance.request({ ...restConfig, cancelToken })
     ).subscribe(observer);
     return () => {
       source.cancel();
