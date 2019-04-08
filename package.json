@@ -1,7 +1,7 @@
 {
   "name": "axios-observable-request",
   "description": "Util to use Axios as RxJs Observer.",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "license": "MIT",
   "main": "lib/index.js",
   "repository": {
@@ -27,11 +27,11 @@
     "postversion": "cross-env-shell \"$npm_execpath run build && git push --tags && yarn publish . --tag $npm_package_version && git push && echo \"Successfully released version $npm_package_version!\"\""
   },
   "devDependencies": {
-    "axios": "^0.18.0",
-    "rxjs": "^6.4.0",
     "@babel/cli": "^7.4.3",
     "@babel/core": "^7.4.3",
     "@babel/preset-env": "^7.4.3",
-    "cross-env": "^5.2.0"
+    "axios": "^0.18.0",
+    "cross-env": "^5.2.0",
+    "rxjs": "^6.4.0"
   }
 }
