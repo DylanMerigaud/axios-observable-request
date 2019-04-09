@@ -1,7 +1,7 @@
 {
   "name": "axios-observable-request",
   "description": "Util to use Axios as RxJs Observer.",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "license": "MIT",
   "main": "lib/index.js",
   "repository": {
