@@ -8,14 +8,13 @@
     "type": "git",
     "url": "https://github.com/DylanMerigaud/axios-observable-request.git"
   },
-  "bugs": {
-    "url": "https://github.com/DylanMerigaud/axios-observable-request/issues"
-  },
+  "bugs": "https://github.com/DylanMerigaud/axios-observable-request/issues",
   "keywords": [
     "Axios",
     "RxJs",
     "Observer",
-    "Util"
+    "Util",
+    "AxiosObservableRequest"
   ],
   "author": "DylanMerigaud <dylanmerigaud@gmail.com>",
   "contributors": [],
@@ -24,14 +23,18 @@
     "start": "cross-env-shell \"$npm_execpath run build -- -w\"",
     "example:default": "node ./examples/default.js",
     "example:custom": "node ./examples/custom.js",
+    "prepare": "install-self-peers -- --ignore-scripts",
     "postversion": "cross-env-shell \"$npm_execpath run build && git push && git push --tags && $npm_execpath publish . --tag $npm_package_version && echo \"Successfully released version $npm_package_version!\"\""
+  },
+  "peerDependencies": {
+    "axios": "^0.18.0",
+    "rxjs": "^6.4.0"
   },
   "devDependencies": {
     "@babel/cli": "^7.4.3",
     "@babel/core": "^7.4.3",
     "@babel/preset-env": "^7.4.3",
-    "axios": "^0.18.0",
-    "cross-env": "^5.2.0",
-    "rxjs": "^6.4.0"
+    "@team-griffin/install-self-peers": "^1.1.1",
+    "cross-env": "^5.2.0"
   }
 }

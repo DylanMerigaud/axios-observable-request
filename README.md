@@ -1,6 +1,20 @@
 # AxiosObservableRequest
 
-![npm](https://img.shields.io/npm/v/axios-observable-request.svg)
+[![npm](https://img.shields.io/npm/v/axios-observable-request.svg)](https://www.npmjs.com/package/axios-observable-request)
+[![GitHub last commit](https://img.shields.io/github/last-commit/DylanMerigaud/axios-observable-request.svg)](https://github.com/DylanMerigaud/axios-observable-request.git)
+[![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-square)](http://makeapullrequest.com)
+
+## Installation
+
+```
+yarn add axios-observable-request
+```
+
+or
+
+```
+npm install axios-observable-request
+```
 
 ## Features
 
