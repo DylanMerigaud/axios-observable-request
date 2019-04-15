@@ -23,8 +23,7 @@
     "start": "cross-env-shell \"$npm_execpath run build -- -w\"",
     "example:default": "node ./examples/default.js",
     "example:custom": "node ./examples/custom.js",
-    "prepare": "install-self-peers -- --ignore-scripts",
-    "postversion": "cross-env-shell \"$npm_execpath run build && git push && git push --tags\""
+    "prepare": "install-self-peers -- --ignore-scripts"
   },
   "peerDependencies": {
     "axios": "^0.18.0",

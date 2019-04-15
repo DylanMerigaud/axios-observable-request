@@ -55,4 +55,8 @@ customCreateObservable({
 
 ## Examples
 
-You can see examples in the `/examples` folder of the github repository.
+You can see examples [here](https://github.com/DylanMerigaud/axios-observable-request/tree/master/examples).
+
+## Demo
+
+You can test the demo with react [here](https://axios-observable-request-create-react-app.netlify.com/).
